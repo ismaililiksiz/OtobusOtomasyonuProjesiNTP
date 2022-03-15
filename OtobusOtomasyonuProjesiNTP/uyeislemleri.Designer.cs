@@ -70,14 +70,14 @@
             this.groupBox1.Controls.Add(this.adtxt);
             this.groupBox1.Location = new System.Drawing.Point(26, 21);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(297, 416);
+            this.groupBox1.Size = new System.Drawing.Size(297, 309);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Üye Ekle";
             // 
             // listelebtn
             // 
-            this.listelebtn.Location = new System.Drawing.Point(20, 287);
+            this.listelebtn.Location = new System.Drawing.Point(22, 199);
             this.listelebtn.Name = "listelebtn";
             this.listelebtn.Size = new System.Drawing.Size(95, 41);
             this.listelebtn.TabIndex = 12;
@@ -87,7 +87,7 @@
             // 
             // silbtn
             // 
-            this.silbtn.Location = new System.Drawing.Point(152, 223);
+            this.silbtn.Location = new System.Drawing.Point(153, 152);
             this.silbtn.Name = "silbtn";
             this.silbtn.Size = new System.Drawing.Size(95, 41);
             this.silbtn.TabIndex = 11;
@@ -97,22 +97,22 @@
             // 
             // teltxt
             // 
-            this.teltxt.Location = new System.Drawing.Point(84, 156);
+            this.teltxt.Location = new System.Drawing.Point(94, 126);
             this.teltxt.Name = "teltxt";
-            this.teltxt.Size = new System.Drawing.Size(135, 20);
+            this.teltxt.Size = new System.Drawing.Size(154, 20);
             this.teltxt.TabIndex = 10;
             // 
             // tctxt
             // 
-            this.tctxt.Location = new System.Drawing.Point(84, 129);
+            this.tctxt.Location = new System.Drawing.Point(94, 99);
             this.tctxt.Name = "tctxt";
-            this.tctxt.Size = new System.Drawing.Size(135, 20);
+            this.tctxt.Size = new System.Drawing.Size(154, 20);
             this.tctxt.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(17, 156);
+            this.label5.Location = new System.Drawing.Point(27, 126);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 13);
             this.label5.TabIndex = 8;
@@ -121,7 +121,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(52, 129);
+            this.label4.Location = new System.Drawing.Point(62, 99);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(23, 13);
             this.label4.TabIndex = 7;
@@ -129,7 +129,7 @@
             // 
             // uyeeklebtn
             // 
-            this.uyeeklebtn.Location = new System.Drawing.Point(20, 223);
+            this.uyeeklebtn.Location = new System.Drawing.Point(22, 152);
             this.uyeeklebtn.Name = "uyeeklebtn";
             this.uyeeklebtn.Size = new System.Drawing.Size(95, 41);
             this.uyeeklebtn.TabIndex = 6;
@@ -140,7 +140,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(34, 102);
+            this.label3.Location = new System.Drawing.Point(44, 72);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(41, 13);
             this.label3.TabIndex = 5;
@@ -150,22 +150,22 @@
             // 
             this.durumtxt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.durumtxt.FormattingEnabled = true;
-            this.durumtxt.Location = new System.Drawing.Point(84, 99);
+            this.durumtxt.Location = new System.Drawing.Point(94, 69);
             this.durumtxt.Name = "durumtxt";
-            this.durumtxt.Size = new System.Drawing.Size(135, 21);
+            this.durumtxt.Size = new System.Drawing.Size(154, 21);
             this.durumtxt.TabIndex = 4;
             // 
             // soyadtxt
             // 
-            this.soyadtxt.Location = new System.Drawing.Point(84, 72);
+            this.soyadtxt.Location = new System.Drawing.Point(94, 42);
             this.soyadtxt.Name = "soyadtxt";
-            this.soyadtxt.Size = new System.Drawing.Size(135, 20);
+            this.soyadtxt.Size = new System.Drawing.Size(154, 20);
             this.soyadtxt.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(38, 72);
+            this.label2.Location = new System.Drawing.Point(48, 42);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(40, 13);
             this.label2.TabIndex = 2;
@@ -174,7 +174,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 46);
+            this.label1.Location = new System.Drawing.Point(65, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(23, 13);
             this.label1.TabIndex = 1;
@@ -182,9 +182,9 @@
             // 
             // adtxt
             // 
-            this.adtxt.Location = new System.Drawing.Point(84, 43);
+            this.adtxt.Location = new System.Drawing.Point(94, 13);
             this.adtxt.Name = "adtxt";
-            this.adtxt.Size = new System.Drawing.Size(135, 20);
+            this.adtxt.Size = new System.Drawing.Size(154, 20);
             this.adtxt.TabIndex = 0;
             // 
             // dataGridView1
@@ -198,7 +198,7 @@
             // 
             // guncellebtn
             // 
-            this.guncellebtn.Location = new System.Drawing.Point(152, 287);
+            this.guncellebtn.Location = new System.Drawing.Point(154, 199);
             this.guncellebtn.Name = "guncellebtn";
             this.guncellebtn.Size = new System.Drawing.Size(95, 41);
             this.guncellebtn.TabIndex = 13;
@@ -208,14 +208,14 @@
             // 
             // aratxt
             // 
-            this.aratxt.Location = new System.Drawing.Point(113, 371);
+            this.aratxt.Location = new System.Drawing.Point(115, 268);
             this.aratxt.Name = "aratxt";
             this.aratxt.Size = new System.Drawing.Size(150, 20);
             this.aratxt.TabIndex = 14;
             // 
             // arabtn
             // 
-            this.arabtn.Location = new System.Drawing.Point(20, 368);
+            this.arabtn.Location = new System.Drawing.Point(22, 265);
             this.arabtn.Name = "arabtn";
             this.arabtn.Size = new System.Drawing.Size(76, 23);
             this.arabtn.TabIndex = 15;
@@ -228,7 +228,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(1102, 461);
+            this.ClientSize = new System.Drawing.Size(910, 337);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Name = "uyeislemleri";
