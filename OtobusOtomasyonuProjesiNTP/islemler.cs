@@ -17,7 +17,7 @@ namespace OtobusOtomasyonuProjesiNTP
             InitializeComponent();
             if (adminmi == false) 
             {
-                seferbtn.Visible = false;
+                seferbtn.Enabled = false;
             }
         }
 

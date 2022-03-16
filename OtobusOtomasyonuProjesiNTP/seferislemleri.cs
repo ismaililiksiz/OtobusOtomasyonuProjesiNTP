@@ -280,5 +280,12 @@ namespace OtobusOtomasyonuProjesiNTP
                 MessageBox.Show("lütfen bir tc değeri giriniz");
             }
         }
+        bool adminmi;
+        private void geribtn_Click(object sender, EventArgs e)
+        {
+            islemler form = new islemler(adminmi);
+            form.Show();
+            this.Hide();
+        }
     }
 }

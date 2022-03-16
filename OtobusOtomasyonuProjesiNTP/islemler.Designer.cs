@@ -38,30 +38,30 @@
             // 
             // İşlemler
             // 
-            this.İşlemler.Controls.Add(this.cikisbtn);
             this.İşlemler.Controls.Add(this.biletbtn);
             this.İşlemler.Controls.Add(this.uyebtn);
             this.İşlemler.Controls.Add(this.seferbtn);
-            this.İşlemler.Location = new System.Drawing.Point(46, 47);
+            this.İşlemler.Location = new System.Drawing.Point(12, 12);
             this.İşlemler.Name = "İşlemler";
-            this.İşlemler.Size = new System.Drawing.Size(673, 278);
+            this.İşlemler.Size = new System.Drawing.Size(673, 178);
             this.İşlemler.TabIndex = 0;
             this.İşlemler.TabStop = false;
-            this.İşlemler.Text = "groupBox1";
+            this.İşlemler.Text = "İşlemler";
             // 
             // cikisbtn
             // 
-            this.cikisbtn.Location = new System.Drawing.Point(47, 216);
+            this.cikisbtn.BackColor = System.Drawing.Color.IndianRed;
+            this.cikisbtn.Location = new System.Drawing.Point(59, 196);
             this.cikisbtn.Name = "cikisbtn";
             this.cikisbtn.Size = new System.Drawing.Size(115, 37);
             this.cikisbtn.TabIndex = 1;
             this.cikisbtn.Text = "Çıkış";
-            this.cikisbtn.UseVisualStyleBackColor = true;
+            this.cikisbtn.UseVisualStyleBackColor = false;
             this.cikisbtn.Click += new System.EventHandler(this.cikisbtn_Click);
             // 
             // biletbtn
             // 
-            this.biletbtn.Location = new System.Drawing.Point(453, 104);
+            this.biletbtn.Location = new System.Drawing.Point(455, 56);
             this.biletbtn.Name = "biletbtn";
             this.biletbtn.Size = new System.Drawing.Size(147, 57);
             this.biletbtn.TabIndex = 2;
@@ -71,7 +71,7 @@
             // 
             // uyebtn
             // 
-            this.uyebtn.Location = new System.Drawing.Point(251, 104);
+            this.uyebtn.Location = new System.Drawing.Point(250, 56);
             this.uyebtn.Name = "uyebtn";
             this.uyebtn.Size = new System.Drawing.Size(147, 57);
             this.uyebtn.TabIndex = 1;
@@ -81,7 +81,7 @@
             // 
             // seferbtn
             // 
-            this.seferbtn.Location = new System.Drawing.Point(47, 104);
+            this.seferbtn.Location = new System.Drawing.Point(47, 56);
             this.seferbtn.Name = "seferbtn";
             this.seferbtn.Size = new System.Drawing.Size(147, 57);
             this.seferbtn.TabIndex = 0;
@@ -94,7 +94,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(712, 244);
+            this.Controls.Add(this.cikisbtn);
             this.Controls.Add(this.İşlemler);
             this.Name = "islemler";
             this.Text = "islemler";

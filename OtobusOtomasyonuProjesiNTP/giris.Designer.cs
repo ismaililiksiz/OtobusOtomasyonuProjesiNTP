@@ -88,7 +88,7 @@
             this.cikisbtn.UseVisualStyleBackColor = true;
             this.cikisbtn.Click += new System.EventHandler(this.cikisbtn_Click);
             // 
-            // Form1
+            // giris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -99,8 +99,8 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.sifretxt);
             this.Controls.Add(this.kuladtxt);
-            this.Name = "Form1";
-            this.Text = "x";
+            this.Name = "giris";
+            this.Text = "Giriş";
             this.ResumeLayout(false);
             this.PerformLayout();
 

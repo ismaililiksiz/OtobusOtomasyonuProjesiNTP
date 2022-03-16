@@ -30,6 +30,8 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.sofortxt = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.otobustxt = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.rotatxt = new System.Windows.Forms.ComboBox();
@@ -40,8 +42,7 @@
             this.listelebtn = new System.Windows.Forms.Button();
             this.sefersilbtn = new System.Windows.Forms.Button();
             this.sefereklebtn = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.sofortxt = new System.Windows.Forms.ComboBox();
+            this.geribtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -75,6 +76,24 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Sefer Ekle";
+            // 
+            // sofortxt
+            // 
+            this.sofortxt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.sofortxt.FormattingEnabled = true;
+            this.sofortxt.Location = new System.Drawing.Point(88, 98);
+            this.sofortxt.Name = "sofortxt";
+            this.sofortxt.Size = new System.Drawing.Size(121, 21);
+            this.sofortxt.TabIndex = 21;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(47, 101);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Şoför:";
             // 
             // otobustxt
             // 
@@ -167,30 +186,24 @@
             this.sefereklebtn.UseVisualStyleBackColor = true;
             this.sefereklebtn.Click += new System.EventHandler(this.sefereklebtn_Click);
             // 
-            // label3
+            // geribtn
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(47, 101);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 20;
-            this.label3.Text = "Şoför:";
-            // 
-            // sofortxt
-            // 
-            this.sofortxt.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.sofortxt.FormattingEnabled = true;
-            this.sofortxt.Location = new System.Drawing.Point(88, 98);
-            this.sofortxt.Name = "sofortxt";
-            this.sofortxt.Size = new System.Drawing.Size(121, 21);
-            this.sofortxt.TabIndex = 21;
+            this.geribtn.BackColor = System.Drawing.Color.IndianRed;
+            this.geribtn.Location = new System.Drawing.Point(12, 327);
+            this.geribtn.Name = "geribtn";
+            this.geribtn.Size = new System.Drawing.Size(98, 37);
+            this.geribtn.TabIndex = 4;
+            this.geribtn.Text = "Geri";
+            this.geribtn.UseVisualStyleBackColor = false;
+            this.geribtn.Click += new System.EventHandler(this.geribtn_Click);
             // 
             // seferislemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(902, 334);
+            this.ClientSize = new System.Drawing.Size(902, 376);
+            this.Controls.Add(this.geribtn);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Name = "seferislemleri";
@@ -219,5 +232,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ComboBox sofortxt;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button geribtn;
     }
 }

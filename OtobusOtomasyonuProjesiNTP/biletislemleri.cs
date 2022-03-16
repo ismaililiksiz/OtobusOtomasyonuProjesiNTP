@@ -27,14 +27,17 @@ namespace OtobusOtomasyonuProjesiNTP
             durumcb.Items.Add("üye");
             durumcb.Items.Add("öğrenci");
             con.ConnectionString = ConfigurationManager.ConnectionStrings["connect"].ConnectionString;
+            biletiadebtn.Enabled = false;
         }
+       
 
         SqlConnection con = new SqlConnection();
 
         List<otobus> liste = new List<otobus>();
 
         int ödeme,indirim;
-        
+        kasa k = new kasa();
+
 
         private void biletsatbtn_Click(object sender, EventArgs e)
         {
@@ -68,20 +71,34 @@ namespace OtobusOtomasyonuProjesiNTP
             }
             ödeme = ödeme - indirim;
             MessageBox.Show(ödeme.ToString());
-            kasa k = new kasa();
+            
             k.kasa1 = ödeme + k.kasa1;
 
             SqlCommand komut = new SqlCommand();
 
             komut.CommandText = "insert into kasa values(@p1)";
             komut.Parameters.AddWithValue("@p1", k.kasa1);
+            biletiadebtn.Enabled = true;
 
+        }
+        bool adminmi;
 
+        private void geribtn_Click(object sender, EventArgs e)
+        {
+            islemler form = new islemler(adminmi);
+            form.Show();
+            this.Hide();
+        }
+
+        private void kasasorgubtn_Click(object sender, EventArgs e)
+        {
+          
+            MessageBox.Show("Kasadiki toplam para " + k.kasa1.ToString());
         }
 
         private void biletiadebtn_Click(object sender, EventArgs e)
         {
-            kasa k = new kasa();
+           
 
             k.kasa1 = k.kasa1 - ödeme;
 
@@ -89,8 +106,8 @@ namespace OtobusOtomasyonuProjesiNTP
 
             komut.CommandText = "insert into kasa values(@p1)";
             komut.Parameters.AddWithValue("@p1", k.kasa1);
-            MessageBox.Show("Test");
-    
+            MessageBox.Show("Bilet başarıyla iade edildi");
+            biletiadebtn.Enabled = false;
         }
     }
 }

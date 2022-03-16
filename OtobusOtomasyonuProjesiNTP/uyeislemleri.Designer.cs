@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.arabtn = new System.Windows.Forms.Button();
+            this.aratxt = new System.Windows.Forms.TextBox();
+            this.guncellebtn = new System.Windows.Forms.Button();
             this.listelebtn = new System.Windows.Forms.Button();
             this.silbtn = new System.Windows.Forms.Button();
             this.teltxt = new System.Windows.Forms.TextBox();
@@ -43,9 +46,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.adtxt = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.guncellebtn = new System.Windows.Forms.Button();
-            this.aratxt = new System.Windows.Forms.TextBox();
-            this.arabtn = new System.Windows.Forms.Button();
+            this.geribtn = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -74,6 +75,33 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Üye Ekle";
+            // 
+            // arabtn
+            // 
+            this.arabtn.Location = new System.Drawing.Point(22, 265);
+            this.arabtn.Name = "arabtn";
+            this.arabtn.Size = new System.Drawing.Size(76, 23);
+            this.arabtn.TabIndex = 15;
+            this.arabtn.Text = "Ara";
+            this.arabtn.UseVisualStyleBackColor = true;
+            this.arabtn.Click += new System.EventHandler(this.arabtn_Click);
+            // 
+            // aratxt
+            // 
+            this.aratxt.Location = new System.Drawing.Point(115, 268);
+            this.aratxt.Name = "aratxt";
+            this.aratxt.Size = new System.Drawing.Size(150, 20);
+            this.aratxt.TabIndex = 14;
+            // 
+            // guncellebtn
+            // 
+            this.guncellebtn.Location = new System.Drawing.Point(154, 199);
+            this.guncellebtn.Name = "guncellebtn";
+            this.guncellebtn.Size = new System.Drawing.Size(95, 41);
+            this.guncellebtn.TabIndex = 13;
+            this.guncellebtn.Text = "Güncelle";
+            this.guncellebtn.UseVisualStyleBackColor = true;
+            this.guncellebtn.Click += new System.EventHandler(this.guncellebtn_Click);
             // 
             // listelebtn
             // 
@@ -196,39 +224,24 @@
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
-            // guncellebtn
+            // geribtn
             // 
-            this.guncellebtn.Location = new System.Drawing.Point(154, 199);
-            this.guncellebtn.Name = "guncellebtn";
-            this.guncellebtn.Size = new System.Drawing.Size(95, 41);
-            this.guncellebtn.TabIndex = 13;
-            this.guncellebtn.Text = "Güncelle";
-            this.guncellebtn.UseVisualStyleBackColor = true;
-            this.guncellebtn.Click += new System.EventHandler(this.guncellebtn_Click);
-            // 
-            // aratxt
-            // 
-            this.aratxt.Location = new System.Drawing.Point(115, 268);
-            this.aratxt.Name = "aratxt";
-            this.aratxt.Size = new System.Drawing.Size(150, 20);
-            this.aratxt.TabIndex = 14;
-            // 
-            // arabtn
-            // 
-            this.arabtn.Location = new System.Drawing.Point(22, 265);
-            this.arabtn.Name = "arabtn";
-            this.arabtn.Size = new System.Drawing.Size(76, 23);
-            this.arabtn.TabIndex = 15;
-            this.arabtn.Text = "Ara";
-            this.arabtn.UseVisualStyleBackColor = true;
-            this.arabtn.Click += new System.EventHandler(this.arabtn_Click);
+            this.geribtn.BackColor = System.Drawing.Color.IndianRed;
+            this.geribtn.Location = new System.Drawing.Point(26, 336);
+            this.geribtn.Name = "geribtn";
+            this.geribtn.Size = new System.Drawing.Size(98, 37);
+            this.geribtn.TabIndex = 2;
+            this.geribtn.Text = "Geri";
+            this.geribtn.UseVisualStyleBackColor = false;
+            this.geribtn.Click += new System.EventHandler(this.geribtn_Click);
             // 
             // uyeislemleri
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(910, 337);
+            this.ClientSize = new System.Drawing.Size(927, 385);
+            this.Controls.Add(this.geribtn);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.groupBox1);
             this.Name = "uyeislemleri";
@@ -261,5 +274,6 @@
         private System.Windows.Forms.Button guncellebtn;
         private System.Windows.Forms.Button arabtn;
         private System.Windows.Forms.TextBox aratxt;
+        private System.Windows.Forms.Button geribtn;
     }
 }
