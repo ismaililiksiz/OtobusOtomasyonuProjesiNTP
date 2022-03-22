@@ -17,7 +17,6 @@ namespace OtobusOtomasyonuProjesiNTP
         public uyeislemleri()
         {
             InitializeComponent();
-
         }
 
         private void uyeislemleri_Load(object sender, EventArgs e)

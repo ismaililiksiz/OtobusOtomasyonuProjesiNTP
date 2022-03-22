@@ -29,35 +29,26 @@
         private void InitializeComponent()
         {
             this.İşlemler = new System.Windows.Forms.GroupBox();
-            this.cikisbtn = new System.Windows.Forms.Button();
             this.biletbtn = new System.Windows.Forms.Button();
             this.uyebtn = new System.Windows.Forms.Button();
             this.seferbtn = new System.Windows.Forms.Button();
+            this.cikisbtn = new System.Windows.Forms.Button();
+            this.soforbtn = new System.Windows.Forms.Button();
             this.İşlemler.SuspendLayout();
             this.SuspendLayout();
             // 
             // İşlemler
             // 
+            this.İşlemler.Controls.Add(this.soforbtn);
             this.İşlemler.Controls.Add(this.biletbtn);
             this.İşlemler.Controls.Add(this.uyebtn);
             this.İşlemler.Controls.Add(this.seferbtn);
             this.İşlemler.Location = new System.Drawing.Point(12, 12);
             this.İşlemler.Name = "İşlemler";
-            this.İşlemler.Size = new System.Drawing.Size(673, 178);
+            this.İşlemler.Size = new System.Drawing.Size(852, 178);
             this.İşlemler.TabIndex = 0;
             this.İşlemler.TabStop = false;
             this.İşlemler.Text = "İşlemler";
-            // 
-            // cikisbtn
-            // 
-            this.cikisbtn.BackColor = System.Drawing.Color.IndianRed;
-            this.cikisbtn.Location = new System.Drawing.Point(59, 196);
-            this.cikisbtn.Name = "cikisbtn";
-            this.cikisbtn.Size = new System.Drawing.Size(115, 37);
-            this.cikisbtn.TabIndex = 1;
-            this.cikisbtn.Text = "Çıkış";
-            this.cikisbtn.UseVisualStyleBackColor = false;
-            this.cikisbtn.Click += new System.EventHandler(this.cikisbtn_Click);
             // 
             // biletbtn
             // 
@@ -89,12 +80,33 @@
             this.seferbtn.UseVisualStyleBackColor = true;
             this.seferbtn.Click += new System.EventHandler(this.seferbtn_Click);
             // 
+            // cikisbtn
+            // 
+            this.cikisbtn.BackColor = System.Drawing.Color.IndianRed;
+            this.cikisbtn.Location = new System.Drawing.Point(59, 196);
+            this.cikisbtn.Name = "cikisbtn";
+            this.cikisbtn.Size = new System.Drawing.Size(115, 37);
+            this.cikisbtn.TabIndex = 1;
+            this.cikisbtn.Text = "Çıkış";
+            this.cikisbtn.UseVisualStyleBackColor = false;
+            this.cikisbtn.Click += new System.EventHandler(this.cikisbtn_Click);
+            // 
+            // soforbtn
+            // 
+            this.soforbtn.Location = new System.Drawing.Point(659, 56);
+            this.soforbtn.Name = "soforbtn";
+            this.soforbtn.Size = new System.Drawing.Size(147, 57);
+            this.soforbtn.TabIndex = 3;
+            this.soforbtn.Text = "Şoför İşlemleri";
+            this.soforbtn.UseVisualStyleBackColor = true;
+            this.soforbtn.Click += new System.EventHandler(this.soforbtn_Click);
+            // 
             // islemler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ClientSize = new System.Drawing.Size(712, 244);
+            this.ClientSize = new System.Drawing.Size(905, 244);
             this.Controls.Add(this.cikisbtn);
             this.Controls.Add(this.İşlemler);
             this.Name = "islemler";
@@ -111,5 +123,6 @@
         private System.Windows.Forms.Button uyebtn;
         private System.Windows.Forms.Button seferbtn;
         private System.Windows.Forms.Button cikisbtn;
+        private System.Windows.Forms.Button soforbtn;
     }
 }

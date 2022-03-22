@@ -49,5 +49,12 @@ namespace OtobusOtomasyonuProjesiNTP
             this.Hide();
             form4.Show();
         }
+
+        private void soforbtn_Click(object sender, EventArgs e)
+        {
+            soforislemleri form5 = new soforislemleri();
+            this.Hide();
+            form5.Show();
+        }
     }
 }
